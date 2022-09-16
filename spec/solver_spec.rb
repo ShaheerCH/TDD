@@ -5,8 +5,8 @@ describe 'Fizz_Buzz' do
     @Fizz_Buzz = Solver.new
   end
   context '#factorial' do
-    it 'should return 120 for factorial 5' do
-      expect(@Fizz_Buzz.factorial(5)).to eq 120
+    it 'should return 720 for factorial 6' do
+      expect(@Fizz_Buzz.factorial(6)).to eq 720
     end
     it 'should return 1 for factorial 0' do
       expect(@Fizz_Buzz.factorial(0)).to eq 1
@@ -24,6 +24,9 @@ describe 'Fizz_Buzz' do
   context 'Reverse' do
     it 'should return "olleh" for "hello"' do
       expect(@Fizz_Buzz.reverse('hello')).to eq 'olleh'
+    end
+    it 'should return "hannah" for "hannah"' do
+      expect(@Fizz_Buzz.reverse('hannah')).to eq 'hannah'
     end
     it 'should return "error" for "error"' do
       expect(@Fizz_Buzz.reverse(1)).to eq 'Error'
