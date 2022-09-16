@@ -29,10 +29,10 @@ describe 'fizz_buzz' do
     it  'should return "hannah" for "hannah"' do
       expect(@fizz_buzz.reverse('hannah')).to eq 'hannah'
       end  
+  context 'Reverse' do
     it 'should return "error" for "error"' do
       expect(@fizz_buzz.reverse(2)).to eq 'Error'
     end
-  end
   context 'fizzbuzz' do
     it 'should return "Fizz" for 3' do
       expect(@fizz_buzz.fizzbuzz(3)).to eq 'Fizz'
