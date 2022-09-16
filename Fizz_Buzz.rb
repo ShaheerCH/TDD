@@ -1,6 +1,6 @@
 class Solver
   def factorial(number)
-    return 'Number Is Negative' if number.negative?
+    return 'Negative Number' if number.negative?
     return 1 if number.zero?
 
     number * factorial(number - 1)
@@ -14,10 +14,9 @@ class Solver
 
   def fizzbuzz(number)
     return 'Is an integer' unless number.is_a? Integer
-    return 'FizzBuzz' if (number % 15).zero?
     return 'Fizz' if (number % 3).zero?
     return 'Buzz' if (number % 5).zero?
-
+    return 'FizzBuzz' if (number % 15).zero?
     number.to_s
   end
 end
