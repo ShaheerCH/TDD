@@ -17,8 +17,8 @@ describe 'fizzbuzz' do
     it 'should return 2 for factorial of 2' do
       expect(@fizzbuzz.factorial(2)).to eq 2
     end
-    it 'should return "Number Is Negative" for factorial -1' do
-      expect(@fizzbuzz.factorial(-1)).to eq 'Number Is Negative'
+    it 'should return "Negative Number" for factorial -3' do
+      expect(@fizzbuzz.factorial(-3)).to eq 'Negative Number'
     end
   end
   context 'Reverse' do
